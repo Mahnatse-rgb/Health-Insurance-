@@ -4,8 +4,10 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 import plotly.graph_objs as go
 import pandas as pd
+import os
+os.chdir('../data')
 
-df = pd.read_csv('data/insurance.csv')
+df = pd.read_csv('insurance.csv')
 
 app = dash.Dash()
 
@@ -15,7 +17,6 @@ for age in df['age'].unique():
 
 features = df.columns
 
-#x_axis = df.drop('charges', 'bmi')
 
 app.layout = html.Div([
              html.H1('Health Insursnce Fee Visualization'),
