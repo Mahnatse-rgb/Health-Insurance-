@@ -4,10 +4,8 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 import plotly.graph_objs as go
 import pandas as pd
-import os
-os.chdir('../data')
 
-df = pd.read_csv('insurance.csv')
+df = pd.read_csv('../data/insurance.csv')
 
 app = dash.Dash()
 
@@ -19,7 +17,7 @@ features = df.columns
 
 
 app.layout = html.Div([
-             html.H1('Health Insursnce Fee Visualization'),
+             html.H1('Health Insurance Fee Visualization'),
 
             #First graph : Scatterplot of charges of bmi in a specific region given the age
 
