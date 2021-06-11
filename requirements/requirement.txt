@@ -252,7 +252,7 @@ visions==0.2.2
 wcwidth==0.1.7
 webencodings==0.5.1
 websocket-client==0.57.0
-websockets==8.1
+websockets==9.1
 Werkzeug==0.16.0
 widgetsnbextension==3.5.1
 wrapt==1.11.2
