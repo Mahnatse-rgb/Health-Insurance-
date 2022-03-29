@@ -146,7 +146,7 @@ pandas==0.25.3
 pandas-profiling==2.5.0
 pandocfilters==1.4.2
 param==1.9.3
-paramiko==2.7.1
+paramiko==2.10.1
 parso==0.5.1
 partd==1.0.0
 path.py==12.0.1
